@@ -8,7 +8,7 @@ def main():
     
     # Train the model
     results = model.train(
-        data="C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/Indian Dataset/DB/data.yaml",
+        data="D:/Arnav/Study/Sem 7/Mini Project/ITSS/Indian Dataset/DB/data.yaml",
         epochs=250,
         imgsz=640,
         batch=64,

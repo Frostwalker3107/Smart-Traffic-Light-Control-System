@@ -24,7 +24,7 @@ vehicle_history = set()
 current_frame_vehicles = set()
 max_id = 0
 
-cap = cv2.VideoCapture("D:/Arnav/Study/Sem 7/Mini Project/ITSS/Tony2.mp4")
+cap = cv2.VideoCapture("D:/Arnav/Study/Sem 7/Mini Project/ITSS/Normal.mp4")
 cv2.namedWindow("Traffic Monitoring", cv2.WINDOW_NORMAL)
 
 while cap.isOpened():

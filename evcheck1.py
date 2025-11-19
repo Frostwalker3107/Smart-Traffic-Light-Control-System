@@ -17,7 +17,7 @@ DISPLAY_SCALE = 0.8  # Scale down display if needed
 vehicle_counter = defaultdict(int)
 current_frame_ids = set()
 
-cap = cv2.VideoCapture("C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/Tony4.mp4")
+cap = cv2.VideoCapture("D:/Arnav/Study/Sem 7/Mini Project/ITSS/Emergency.mp4")
 original_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 original_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 

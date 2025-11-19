@@ -5,7 +5,7 @@ model = YOLO("yolov8n.pt")
 
 # Train the model
 results = model.train(
-    data="C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/data.yaml",  # Path to your dataset YAML
+    data="D:/Arnav/Study/Sem 7/Mini Project/ITSS/data.yaml",  # Path to your dataset YAML
     epochs=50,                         # Number of training cycles
     imgsz=640,                         # Image size
     batch=16,                           # Reduce if your PC is slow

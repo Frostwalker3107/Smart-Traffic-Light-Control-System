@@ -4,8 +4,8 @@ import numpy as np
 from collections import defaultdict
 
 # Load both models
-vehicle_model = YOLO("yolov8n.pt").to('cuda')  # Standard vehicle detector
-emergency_model = YOLO("runs/detect/emergency_v116/weights/best.pt").to('cuda')  # Your custom model
+vehicle_model = YOLO("yolov8n.pt").to('cpu')  # Standard vehicle detector
+emergency_model = YOLO("runs/detect/emergency_v116/weights/best.pt").to('cpu')  # Your custom model
 # Class mappings
 EMERGENCY_CLASSES = {0: "ambulance", 1: "police", 2: "fire_truck"}  # From your custom model
 STANDARD_VEHICLES = {2: "car", 5: "bus", 7: "truck"}  # From yolov8n.pt
@@ -21,7 +21,7 @@ vehicle_history = set()  # Tracks all unique vehicles ever seen
 current_frame_vehicles = set()  # Tracks vehicles in current frame
 max_id = 0  # To ensure unique IDs for emergency vehicles when not tracked
 
-cap = cv2.VideoCapture("C:/Users/Tony/Desktop/A-Z/Mini Project/AITLC/Object-Detection-101/Videos/Tony.mp4")
+cap = cv2.VideoCapture("D:/Arnav/Study/Sem 7/Mini Project/ITSS/Normal.mp4")
 
 # Window setup
 cv2.namedWindow("Traffic Monitoring", cv2.WINDOW_NORMAL)

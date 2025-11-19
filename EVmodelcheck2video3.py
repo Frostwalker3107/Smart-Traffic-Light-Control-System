@@ -5,8 +5,8 @@ from collections import defaultdict
 
 # Load all three models
 # vehicle_model = YOLO("yolov8s.pt").to('cuda')  # Standard vehicle detector
-emergency_model = YOLO("runs/detect/emergency_v116/weights/best.pt").to('cuda')  # Emergency vehicles
-indian_vehicle_model = YOLO("runs/detect/emergency_v119/weights/best.pt").to('cuda')  # New Indian vehicle model
+emergency_model = YOLO("runs/detect/emergency_v116/weights/best.pt").to('cpu')  # Emergency vehicles
+indian_vehicle_model = YOLO("runs/detect/emergency_v119/weights/best.pt").to('cpu')  # New Indian vehicle model
 
 # Class mappings
 EMERGENCY_CLASSES = {0: "ambulance", 1: "police", 2: "fire_truck"}
@@ -24,7 +24,7 @@ vehicle_history = set()
 current_frame_vehicles = set()
 max_id = 0
 
-cap = cv2.VideoCapture("C:/Users/Tony/Desktop/A-Z/Mini Project/AITLC/Object-Detection-101/Videos/Tony.mp4")
+cap = cv2.VideoCapture("D:\Arnav\Study\Sem 7\Mini Project\ITSS\Emergency.mp4")
 cv2.namedWindow("Traffic Monitoring", cv2.WINDOW_NORMAL)
 
 while cap.isOpened():

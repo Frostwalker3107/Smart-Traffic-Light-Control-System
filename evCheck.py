@@ -7,7 +7,7 @@ model = YOLO("yolov8n.pt")  # Nano version (fastest)
 EMERGENCY_CLASSES = {3: "ambulance", 4: "police", 5: "fire_truck"}  # Update with your class IDs
 VEHICLE_CLASSES = {2: "car", 6: "truck", 7: "bus", 3: "ambulance"}  # Include emergency vehicles
 
-cap = cv2.VideoCapture("C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/Tony4.mp4")
+cap = cv2.VideoCapture("D:/Arnav/Study/Sem 7/Mini Project/ITSS/Emergency.mp4")
 
 while cap.isOpened():
     ret, frame = cap.read()

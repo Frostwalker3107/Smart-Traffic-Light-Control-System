@@ -1,0 +1,13 @@
+train: C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/Indian Dataset/DB/train/images
+val: C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/Indian Dataset/DB/valid/images
+test: C:/Users/Tony/Desktop/A-Z/Mini Project/ITSS/Indian Dataset/DB/test/images
+
+nc: 1
+names: ['Vehicles']
+
+roboflow:
+  workspace: itss-5lpim
+  project: id-bncfq
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/itss-5lpim/id-bncfq/dataset/1

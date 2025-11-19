@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['emergency lights']
+
+roboflow:
+  workspace: itss-5lpim
+  project: my-first-project-euywb
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/itss-5lpim/my-first-project-euywb/dataset/3

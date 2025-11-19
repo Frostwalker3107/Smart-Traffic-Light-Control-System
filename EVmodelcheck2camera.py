@@ -3,8 +3,8 @@ import cv2
 from collections import defaultdict
 
 # Load models
-emergency_model = YOLO("runs/detect/emergency_v116/weights/best.pt").to('cuda')
-indian_vehicle_model = YOLO("runs/detect/emergency_v119/weights/best.pt").to('cuda')
+emergency_model = YOLO("runs/detect/emergency_v116/weights/best.pt").to('cpu')
+indian_vehicle_model = YOLO("runs/detect/emergency_v119/weights/best.pt").to('cpu')
 
 # Class mappings
 EMERGENCY_CLASSES = {0: "ambulance", 1: "police", 2: "fire_truck"}
